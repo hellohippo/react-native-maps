@@ -177,6 +177,7 @@ public class AirMapView extends MapView implements GoogleMap.InfoWindowAdapter,
       return;
     }
     this.map = map;
+    this.map.setIndoorEnabled(false);
     this.map.setInfoWindowAdapter(this);
     this.map.setOnMarkerDragListener(this);
     this.map.setOnPoiClickListener(this);
